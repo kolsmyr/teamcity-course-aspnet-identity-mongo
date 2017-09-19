@@ -35,7 +35,7 @@
 
 			var role = new IdentityRole(name);
 
-			Expect(role.Name, Is.EqualTo("notadmin"));
+			Expect(role.Name, Is.EqualTo(name));
 		}
 
 		[Test]
@@ -47,6 +47,5 @@
 			Expect(parsed, Is.Not.Null);
 			Expect(parsed, Is.Not.EqualTo(ObjectId.Empty));
 		}
-			
 	}
-} 
+}
